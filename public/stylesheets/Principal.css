@@ -1,0 +1,349 @@
+/*  GENERAL */
+ 
+.worldtick{
+  color: #dc0404;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  transition: all 0.2s ease;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+p span {
+  font-weight: bolder;
+}
+
+/*  HEADER */
+
+h1{
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  color: #333333;
+  border-bottom: 1px solid #dc0404;
+  box-shadow: inset 0px -6px 5px #e8e8e8;
+}
+
+header i {
+  color: #333333;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+/*BOTONERA FIJA*/
+
+nav {
+  position: sticky;
+  top: -1px;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0px 3px 4px #e8e8e8;
+  z-index: 9999999;
+}
+
+.elem {
+  padding-top: 3px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: medium;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.elem:hover {
+  color: #990100;
+}
+
+a:hover {
+  color: #990100;
+}
+
+.activo {
+  border-bottom: 0.5px solid #990100;
+}
+
+/*  INICIO MAIN  */
+
+.maininicio {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.imagenindex {
+  margin-top: 15px;
+  margin-left: 15px;
+  position: relative;
+  width: 80%;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+
+.right {
+  float: right;
+  width: 75%;
+}
+
+.contenedorindex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #333333;
+}
+
+.sombra {
+  border-radius: 100px;
+  display: flex;
+  height: 50px;
+  width: 700px;
+  background-color: #333333;
+  margin: auto;
+  margin-top: 30px;
+
+  transform: perspective(0.5em) rotateX(3deg) scale(1, 0.25);
+  filter: blur(3em);
+}
+
+.pad {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.right h1,
+p {
+  text-align: center;
+}
+
+/* FIN PRINCIPAL */
+
+/* INICIO NOTICIAS */
+
+.contenedornoticias {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.contenct {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  border-bottom: 1px solid #990100;
+}
+
+.noticias {
+  margin: 5%;
+  width: 40%;
+  height: 470px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.noticias h4 {
+  margin: 10px;
+}
+
+.rightnot {
+  margin-left: 550px;
+}
+
+.noticias img {
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.noticias img:hover {
+  transform: scale(1.2);
+}
+
+/* FIN NOTICIAS -----------------------------------*/
+
+/* INICIO GRANDES PREMIOS ----------------------------- */
+
+.contenedorGP {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 60px;
+  /* margin-top: 100px; */
+  /* background-color: #990100; */
+}
+
+.trio {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+  display: inline-flex;
+  /* background-color: #990100; */
+}
+
+.duo {
+  margin-top: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: inline-flex;
+}
+
+.individual {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: inline-flex;
+}
+
+.gpind:hover {
+  transform: scale(1.04);
+}
+
+.gpind {
+  border: 1px solid #990100;
+  border-radius: 5px;
+  box-shadow: 20px 20px 10px #333333;
+  padding: 30px;
+  height: 350px;
+  width: 300px;
+  transition: all 0.5s ease;
+}
+
+li {
+  list-style: none;
+  font-size: large;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.imGP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.8);
+}
+
+.txtgp {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.botongp {
+  position: relative;
+  left: -31px;
+  width: 300px;
+  height: 60px;
+  color: #e8e8e8;
+  background-color: #990100;
+  border: 1px solid #990100;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* FIN GRANDES PREMIOSSS --------------------------- */
+
+/* INICIO CONTACTOS --------------------------- */
+
+.contcontacto {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  border-radius: 5px;
+  padding-top: -20px;
+}
+
+.formu {
+  margin-bottom: 10px;
+}
+
+.botonform {
+  display: flex;
+  margin: auto;
+  background-color: #333333;
+  border: 1px solid #333333;
+  margin-bottom: 10px;
+}
+
+.botonform:hover {
+  background-color: #990100;
+  color: #e8e8e8;
+  border: 1px solid #333333;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.superiorcontacto {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: center;
+  border: 1px solid #990100;
+  border-radius: 5px;
+}
+
+.cajacontacto {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  width: 700px;
+}
+
+/* FIN CONTACTO -------------- */
+
+/*  PIE DE PÁGINA */
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  font-weight: lighter;
+  font-size: small;
+  background-color: #f6f6f6;
+  color: #333333;
+  border-top: 1px solid #e8e8e8;
+  box-shadow: 0px -3px 4px #e8e8e8;
+}

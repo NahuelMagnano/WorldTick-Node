@@ -1,0 +1,47 @@
+<div>
+    {{!-- INICIO FILA 1 --}}
+    <div class="row">
+        <p class="msglog"> Bienvenido {{ usuario }}</p>
+        <a href="/admin/login/logout" class="btn btn-sm btn-danger botlogout">Cerrar Sesión <i class="fa fa-sig-out"></a></i>
+    </div>
+    {{!-- FIN DE LA FILA 1 --}}
+    <div class="contenedoradminnoticias">
+        <div class="row  ">
+        <div class="col-7">
+            <div class="col-2 text-right">
+                <h3 class="titnoticias">Listado de noticias</h3>
+                <a href="/admin/noticias/agregar" class="btn btn-success botagregar"> <i class="fa fa-plus iconoagregar"></i> Agregar noticias</a>
+            </div>
+        </div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col" class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each noticias}}
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>{{titulo}}</td>
+                            <td>{{{imagen}}}</td>
+                            <td class="text-center">
+                                <a href="/admin/noticias/modificar/{{id}}" class="btn btn-sm btn-secondary"><i class="fas fa-pencil-alt"></i></i></a>
+                                <a href="/admin/noticias/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>

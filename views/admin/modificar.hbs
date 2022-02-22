@@ -1,0 +1,61 @@
+<div class="contadminagregnoticias">
+  <div class="row">
+    <div class="formmodificar">
+      <div class="col-6 offset-3 agrnoticia">
+        <h4 class="titumodificar">Modifica la noticia</h4>
+        <form
+          action="/admin/noticias/modificar"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" value="{{noticia.id}}" name="id" />
+          <div class="mb-3 row">
+            <input
+              type="text"
+              class="form-control"
+              name="titulo"
+              value="{{noticia.titulo}}"
+            />
+          </div>
+          <div class="mb-3 row">
+            <textarea
+              name="cuerpo"
+              type="text"
+              class="form-control"
+              rows="5"
+              cols="50"
+            >{{noticia.cuerpo}}</textarea>
+          </div>
+
+          <div class="formimagen">
+            <p>
+              <label class="textoimagen">Imagen:
+                <input type="file" name="imagen" id="imagen" /></label>
+            </p>
+            <p>
+              <label><input
+                  type="checkbox"
+                  name="img_delete"
+                  id="img_delete"
+                  value="1"
+                />Eliminar imagen actual</label>
+              <input
+                type="hidden"
+                name="img_original"
+                value="{{noticia.img_id}}"
+              />
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary botonform"
+          >Modificar</button>
+        </form>
+        {{#if error}}
+          <h5 class="errormodificar">{{message}}</h5>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="suplogin">
+  <h6>Ingrese sus datos para iniciar sesión</h6>
+</div>
+
+<div>
+  <div class="login">
+    <div class="formlogin">
+      <form action="/admin/login" method="post">
+        <div class="form-group uyc">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Usuario"
+            name="usuario"
+          />
+        </div>
+
+        <div class="form-group uyc passw">
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="btingreso">
+          <button
+            class="btn btn-primary botonform"
+            type="submit"
+          >Ingresar</button>
+        </div>
+
+      </form>
+
+      {{#if error}}
+        <h5 class="errorlogin">Usuario o contraseña incorrecta.</h5>
+      {{/if}}
+    </div>
+  </div>
+</div>

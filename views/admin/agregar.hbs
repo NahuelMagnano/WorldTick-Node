@@ -1,0 +1,47 @@
+<div class="contadminagregnoticias">
+  <div class="row">
+    <div class="formagregar">
+      <div class="col-6 offset-3 agrnoticia">
+        <h4 class="tituagregar">Agregar una nueva noticia</h4>
+        <form
+          action="/admin/noticias/agregar"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3 row">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Título"
+              name="titulo"
+            />
+          </div>
+          <div class="mb-3 row">
+            <textarea
+              name="cuerpo"
+              type="text"
+              class="form-control"
+              placeholder="Cuerpo"
+              rows="6"
+              cols="50"
+            ></textarea>
+          </div>
+          <div class="formimagen">
+            <p>
+              <label class="textoimagen">Imagen:
+                <input type="file" name="imagen" id="imagen" /></label>
+            </p>
+
+          <button
+            type="submit"
+            class="btn btn-primary botonform"
+          >Guardar</button>
+        </form>
+        {{#if error}}
+          <h5 class="erroragregar">{{message}}</h5>
+        {{/if}}
+      </div>
+    </div>
+
+  </div>
+</div>
